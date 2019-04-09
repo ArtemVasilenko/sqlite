@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DataBaseSQLite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="63t-Tw-ToZ">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Moi-bk-RmQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="408"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="jiw-L3-K1N">
+                                                <rect key="frame" x="0.0" y="-11" width="374" height="419"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="svM-V1-Vqq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="182.5" height="419"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1yB-J2-YgY">
+                                                                <rect key="frame" x="0.0" y="0.0" width="183" height="419"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2U-QL-dit">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="34.5"/>
+                                                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <state key="normal" title="Create DB"/>
+                                                                        <connections>
+                                                                            <action selector="buttonsDbAtions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="okj-1a-D71"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elE-rm-T0s">
+                                                                        <rect key="frame" x="0.0" y="42.5" width="183" height="35"/>
+                                                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <state key="normal" title="Remove DB"/>
+                                                                        <connections>
+                                                                            <action selector="buttonsDbAtions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LHY-Bv-7ld"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUt-Qp-gkB">
+                                                                        <rect key="frame" x="0.0" y="85.5" width="183" height="34.5"/>
+                                                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <state key="normal" title="List Table"/>
+                                                                        <connections>
+                                                                            <action selector="buttonsDbAtions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QOc-tI-63q"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uE5-zu-E3L">
+                                                                        <rect key="frame" x="0.0" y="128" width="183" height="35"/>
+                                                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <state key="normal" title="Create Table"/>
+                                                                        <connections>
+                                                                            <action selector="buttonsDbAtions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YQy-Gw-3sT"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tie-FB-aeA">
+                                                                        <rect key="frame" x="0.0" y="171" width="183" height="34.5"/>
+                                                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <state key="normal" title="Insert Table"/>
+                                                                        <connections>
+                                                                            <action selector="buttonsDbAtions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v8t-cj-mxI"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaJ-D9-dz9">
+                                                                        <rect key="frame" x="0.0" y="213.5" width="183" height="34.5"/>
+                                                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <state key="normal" title="Update table"/>
+                                                                        <connections>
+                                                                            <action selector="buttonsDbAtions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o0h-ok-Q5k"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCr-Fo-oQf">
+                                                                        <rect key="frame" x="0.0" y="256" width="183" height="35"/>
+                                                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <state key="normal" title="Delete values"/>
+                                                                        <connections>
+                                                                            <action selector="buttonsDbAtions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hkr-bC-eG4"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dj5-K6-Kqv">
+                                                                        <rect key="frame" x="0.0" y="299" width="183" height="34.5"/>
+                                                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <state key="normal" title="Pack Table"/>
+                                                                        <connections>
+                                                                            <action selector="buttonsDbAtions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3eR-24-hl3"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nx5-D8-6aL">
+                                                                        <rect key="frame" x="0.0" y="341.5" width="183" height="35"/>
+                                                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <state key="normal" title="Select Table"/>
+                                                                        <connections>
+                                                                            <action selector="buttonsDbAtions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rsi-gL-gYs"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPn-Cy-rR4">
+                                                                        <rect key="frame" x="0.0" y="384.5" width="183" height="34.5"/>
+                                                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <state key="normal" title="Select Any"/>
+                                                                        <connections>
+                                                                            <action selector="buttonsDbAtions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CHf-rf-eDl"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="1yB-J2-YgY" secondAttribute="trailing" constant="-0.5" id="Ncn-rX-SoP"/>
+                                                            <constraint firstItem="1yB-J2-YgY" firstAttribute="leading" secondItem="svM-V1-Vqq" secondAttribute="leading" id="VIT-Ah-wge"/>
+                                                            <constraint firstItem="1yB-J2-YgY" firstAttribute="top" secondItem="svM-V1-Vqq" secondAttribute="top" id="d9l-Qg-uus"/>
+                                                            <constraint firstAttribute="bottom" secondItem="1yB-J2-YgY" secondAttribute="bottom" id="m3O-kD-8yw"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kL9-AO-Ij9">
+                                                        <rect key="frame" x="191.5" y="0.0" width="182.5" height="419"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yVn-hr-UZ2">
+                                                                <rect key="frame" x="0.0" y="0.0" width="183" height="419"/>
+                                                                <subviews>
+                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WVE-Kh-S1l">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="205.5"/>
+                                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                    </textView>
+                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fr7-R5-rJw">
+                                                                        <rect key="frame" x="0.0" y="213.5" width="183" height="205.5"/>
+                                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                    </textView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="yVn-hr-UZ2" secondAttribute="bottom" id="CgO-9D-vav"/>
+                                                            <constraint firstItem="yVn-hr-UZ2" firstAttribute="top" secondItem="kL9-AO-Ij9" secondAttribute="top" id="POA-9r-uFH"/>
+                                                            <constraint firstAttribute="trailing" secondItem="yVn-hr-UZ2" secondAttribute="trailing" constant="-0.5" id="v8K-n3-JoN"/>
+                                                            <constraint firstItem="yVn-hr-UZ2" firstAttribute="leading" secondItem="kL9-AO-Ij9" secondAttribute="leading" id="zh4-Wk-fyc"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="jiw-L3-K1N" secondAttribute="bottom" id="5rn-fQ-n3c"/>
+                                            <constraint firstAttribute="trailing" secondItem="jiw-L3-K1N" secondAttribute="trailing" id="FN4-SH-QrZ"/>
+                                            <constraint firstItem="jiw-L3-K1N" firstAttribute="leading" secondItem="Moi-bk-RmQ" secondAttribute="leading" id="G4o-Os-agr"/>
+                                            <constraint firstItem="jiw-L3-K1N" firstAttribute="top" secondItem="Moi-bk-RmQ" secondAttribute="top" constant="-11" id="mxf-Sn-1hQ"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="If6-hq-Z8U">
+                                        <rect key="frame" x="0.0" y="410" width="374" height="408"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="oZC-Jf-ekd">
+                                                <rect key="frame" x="0.0" y="28" width="374" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oZC-Jf-ekd" id="Bbo-8n-Jas">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="2KV-yq-VWK"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="HWO-aG-aIq"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="63t-Tw-ToZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="3mb-Gx-bMg"/>
+                            <constraint firstItem="63t-Tw-ToZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fw9-ev-BDA"/>
+                            <constraint firstItem="63t-Tw-ToZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nnd-SM-cO4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="63t-Tw-ToZ" secondAttribute="trailing" constant="20" id="x6C-bZ-Dl4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="logTextView" destination="Fr7-R5-rJw" id="CwI-dM-SuS"/>
+                        <outlet property="myTable" destination="If6-hq-Z8U" id="PvA-Dq-Mad"/>
+                        <outlet property="requestTextView" destination="WVE-Kh-S1l" id="HJn-NK-vEu"/>
+                        <outletCollection property="buttonsOutlet" destination="j2U-QL-dit" collectionClass="NSMutableArray" id="m9p-1r-sjM"/>
+                        <outletCollection property="buttonsOutlet" destination="elE-rm-T0s" collectionClass="NSMutableArray" id="OQc-vM-COp"/>
+                        <outletCollection property="buttonsOutlet" destination="hUt-Qp-gkB" collectionClass="NSMutableArray" id="xwC-bR-uDX"/>
+                        <outletCollection property="buttonsOutlet" destination="uE5-zu-E3L" collectionClass="NSMutableArray" id="l7V-jX-a5t"/>
+                        <outletCollection property="buttonsOutlet" destination="Tie-FB-aeA" collectionClass="NSMutableArray" id="afG-2f-Vhv"/>
+                        <outletCollection property="buttonsOutlet" destination="iaJ-D9-dz9" collectionClass="NSMutableArray" id="RI8-S9-2bA"/>
+                        <outletCollection property="buttonsOutlet" destination="MCr-Fo-oQf" collectionClass="NSMutableArray" id="VPF-pd-edG"/>
+                        <outletCollection property="buttonsOutlet" destination="dj5-K6-Kqv" collectionClass="NSMutableArray" id="4z4-HC-iLS"/>
+                        <outletCollection property="buttonsOutlet" destination="nx5-D8-6aL" collectionClass="NSMutableArray" id="LZT-P0-e9X"/>
+                        <outletCollection property="buttonsOutlet" destination="NPn-Cy-rR4" collectionClass="NSMutableArray" id="ubr-rY-e58"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+</document>
