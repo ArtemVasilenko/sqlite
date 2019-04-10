@@ -42,7 +42,7 @@ extension DB {
         return values
     }
     
-    func getListTable(db:OpaquePointer) -> [String]{
+    func getListTable(db:OpaquePointer) -> [String] {
         var str : OpaquePointer? = nil
         var values = [String]()
         let query:String = " select name from sqlite+master where type = 'table' and name,. 'sqlite_sequence'"
@@ -95,11 +95,11 @@ extension DB {
         
     }
     
-    func selectFromTable(db:OpaquePointer,inTable:String,name:String, afterWhere: String) -> [String]{
+    func selectFromTable(db: OpaquePointer, inTable: String, name: String, afterWhere: String) -> [String] {
         
         var str : OpaquePointer? = nil
         var values = [String]()
-        var query:String = "SELECT \(name) FROM \(inTable) "
+        var query: String = "SELECT \(name) FROM \(inTable) "
         
         if afterWhere != "" {
             query += "WHERE \(afterWhere)"
@@ -130,6 +130,7 @@ extension DB {
     }
     
     func removeDB(url: URL, fm: FileManager) {
+        print("url = \(url)")
         do {
             try fm.removeItem(at: url)
         } catch {
@@ -164,7 +165,7 @@ extension DB {
             print("table query error")
             return
         }
-        print("table query")
+        print("create table done")
         
         sqlite3_finalize(table) //закрытие таблицы после изменений (транзакции)
     }

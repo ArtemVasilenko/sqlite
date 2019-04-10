@@ -15,6 +15,7 @@
 		ACA8A3202253CAF600329C8A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A31F2253CAF600329C8A /* Model.swift */; };
 		ACA8A324225BB47A00329C8A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A323225BB47A00329C8A /* Data.swift */; };
 		ACA8A326225BB51D00329C8A /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A325225BB51D00329C8A /* Engine.swift */; };
+		ACA8A32C225E538800329C8A /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8A32B225E538800329C8A /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		ACA8A31F2253CAF600329C8A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		ACA8A323225BB47A00329C8A /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		ACA8A325225BB51D00329C8A /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		ACA8A32B225E538800329C8A /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				ACA8A325225BB51D00329C8A /* Engine.swift */,
 				ACA8A323225BB47A00329C8A /* Data.swift */,
 				ACA8A3112253C5B400329C8A /* Main.storyboard */,
+				ACA8A32B225E538800329C8A /* Alert.swift */,
 				ACA8A3142253C5B900329C8A /* Assets.xcassets */,
 				ACA8A3162253C5B900329C8A /* LaunchScreen.storyboard */,
 				ACA8A3192253C5B900329C8A /* Info.plist */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA8A32C225E538800329C8A /* Alert.swift in Sources */,
 				ACA8A3202253CAF600329C8A /* Model.swift in Sources */,
 				ACA8A3102253C5B400329C8A /* ViewController.swift in Sources */,
 				ACA8A30E2253C5B400329C8A /* AppDelegate.swift in Sources */,
